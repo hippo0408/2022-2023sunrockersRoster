@@ -14,14 +14,28 @@ var data=
       'Inside Defending',
       'Outside Defending'];
 
-const options = {
-  scale: {
+const options =  {
+  scales: {
     r: {
+      //グラフの最小値・最大値
       min: 0,
       max: 100,
-      stepSize: 10,
-    }
-  }
+    
+      //グリッドライン
+      grid: {
+        color: 'purple',
+      },
+      //アングルライン
+      angleLines: {
+        color: 'purple',
+      },
+      //各項目のラベル
+      pointLabels: {
+        color: 'white',
+      
+      },
+    },
+  },
 }
 
 var ctx = document.getElementById('kj');
