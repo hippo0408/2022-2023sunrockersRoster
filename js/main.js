@@ -20,6 +20,7 @@ const options =  {
       //グラフの最小値・最大値
       min: 0,
       max: 100,
+      stepSize: 10, 
     
       //グリッドライン
       grid: {
@@ -32,8 +33,8 @@ const options =  {
       //各項目のラベル
       pointLabels: {
         color: 'white',
-},
-           ticks: {             // 目盛り
+      },
+      ticks: {             // 目盛り
         stepSize: 10,        // 目盛の間隔
     },
     },
