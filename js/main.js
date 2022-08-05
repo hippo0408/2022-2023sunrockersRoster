@@ -32,6 +32,9 @@ const options =  {
       //各項目のラベル
       pointLabels: {
         color: 'white',
+           ticks: {             // 目盛り
+        stepSize: 10,        // 目盛の間隔
+    },
       
       },
     },
