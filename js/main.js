@@ -53,7 +53,7 @@ var mychart = new Chart(ctx, {
       ],
       backgroundColor: 'rgba(255,255,255,0.1)',
       borderColor: 'rgb(252, 220, 0)',
-      borderWidth: 1,
+      borderWidth: 2,
       pointBackgroundColor: 'rgb(255,255,255)',
       hitRadius: 5
     }, 

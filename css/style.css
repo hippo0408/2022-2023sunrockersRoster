@@ -1,11 +1,10 @@
 
 
 .member{
-    width: 28%;
-    height: 1480px;
+    max-width: 400px;
     flex-direction: column;
     flex-wrap: wrap;
-    border-left:1px solid #fff;
+    border-left:1px solid #fff; 
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
     background-color: #242424;
@@ -55,8 +54,8 @@
   }
   
   .member-image img{
-    height: 350px;
     width:100%;
+    max-height: 370px;
     position: relative;
     overflow: hidden;
     object-fit: cover;
@@ -98,7 +97,7 @@
     width: 90%;
     margin: -120px 0 0 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid;
   }
 
   .text {
