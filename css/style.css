@@ -2,6 +2,7 @@
 
 .member{
     width: 28%;
+    height: 1480px;
     flex-direction: column;
     flex-wrap: wrap;
     border-left:1px solid #fff;
