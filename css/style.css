@@ -1,13 +1,19 @@
-
+.members{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;    
+  margin: 0 auto;
+}
 
 .member{
-    max-width: 400px;
+    width: 400px;
     flex-direction: column;
     flex-wrap: wrap;
     border-left:1px solid #fff; 
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
     background-color: #242424;
+    padding-bottom: 10px;
   }
   
   .member-card{
@@ -63,7 +69,7 @@
   
   .profile{
     position:absolute;
-    top:20%;
+    top:10%;
     left: 0;
     width: 100%;   
   }
@@ -76,7 +82,38 @@
     left: 0;
     opacity: 0;
     transition: all 0.3s;
-  }
+}
+
+.member-image:hover .mask{
+    opacity: 1;
+}
+
+.member-image:hover img{
+    opacity: 0.4;
+}
+
+
+.profile ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-right: 30px;
+    border-bottom: 1px solid #303030;
+}
+
+.profile ul li span{
+    text-transform: uppercase;
+    font-family: 'Graphik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color:white;    
+}
+
+.profile ul li span:first-child{
+    opacity: 0.5;
+    text-align: left;
+}
   
   .member-image{
     position:relative;
@@ -109,6 +146,7 @@
     color: #fff;
     font-size: 18px;
     margin-bottom: 5px;
+    line-height: 20px;
   }
 
   h3 {
@@ -121,7 +159,6 @@
     width: 70px;
     border-radius: 5px;
     margin: 0 auto;
-    margin-bottom: 20px;
   }
 
   .topix {

@@ -41,15 +41,15 @@ const options =  {
   },
 }
 
-var ctx = document.getElementById('kj');
+var ctx = document.getElementById('kelly');
 var mychart = new Chart(ctx, {
   type: 'radar',
   data: {
     labels:data,
     datasets: [{
-      label: 'KJ',
+      label: 'kelly',
       data: [
-        85,88,90,72,88,94,68,86,85,86,78
+        92,97,82,69,92,95,74,71,88,84,75
       ],
       backgroundColor: 'rgba(255,255,255,0.1)',
       borderColor: 'rgb(252, 220, 0)',
@@ -61,3 +61,25 @@ var mychart = new Chart(ctx, {
   },
   options
 });
+
+var ctx = document.getElementById('kj');
+var mychart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels:data,
+    datasets: [{
+      label: 'KJ',
+      data: [
+        84,87,90,72,88,94,68,81,82,86,78
+      ],
+      backgroundColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgb(252, 220, 0)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgb(255,255,255)',
+      hitRadius: 5
+    }, 
+      ]
+  },
+  options
+});
+
