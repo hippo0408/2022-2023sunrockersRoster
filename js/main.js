@@ -45,11 +45,11 @@ var ctx = document.getElementById('sekino');
 var mychart = new Chart(ctx, {
   type: 'radar',
   data: {
-    labels:data,か
+    labels:data,
     datasets: [{
       label: 'sekino',
       data: [
-        60,52,70,82,92,78,70,69,51,70,95
+        60,52,70,82,92,85,70,69,51,70,95
       ],
       backgroundColor: 'rgba(255,255,255,0.1)',
       borderColor: 'rgb(252, 220, 0)',
