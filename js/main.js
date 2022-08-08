@@ -49,7 +49,7 @@ var mychart = new Chart(ctx, {
     datasets: [{
       label: 'Leo',
       data: [
-        72,85 ,73,87,95,90,88,88,50,62,93
+        72,85,73,87,95,90,87,87,50,62,93
       ],
       backgroundColor: 'rgba(255,255,255,0.1)',
       borderColor: 'rgb(252, 220, 0)',
