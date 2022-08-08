@@ -41,6 +41,27 @@ const options =  {
   },
 }
 
+var ctx = document.getElementById('leo');
+var mychart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels:data,
+    datasets: [{
+      label: 'Leo',
+      data: [
+        72,85 ,73,87,95,90,88,88,50,62,93
+      ],
+      backgroundColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgb(252, 220, 0)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgb(255,255,255)',
+      hitRadius: 5
+    }, 
+      ]
+  },
+  options
+});
+
 var ctx = document.getElementById('sekino');
 var mychart = new Chart(ctx, {
   type: 'radar',
