@@ -41,6 +41,27 @@ const options =  {
   },
 }
 
+var ctx = document.getElementById('nishino');
+var mychart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels:data,
+    datasets: [{
+      label: 'nishino',
+      data: [
+        79,76,78,65,85,72,72,65,68,78,77
+      ],
+      backgroundColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgb(252, 220, 0)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgb(255,255,255)',
+      hitRadius: 5
+    }, 
+      ]
+  },
+  options
+});
+
 var ctx = document.getElementById('leo');
 var mychart = new Chart(ctx, {
   type: 'radar',
@@ -49,7 +70,7 @@ var mychart = new Chart(ctx, {
     datasets: [{
       label: 'Leo',
       data: [
-        72,85,73,87,95,90,87,87,50,62,93
+        72,85 ,73,87,95,90,88,88,50,62,93
       ],
       backgroundColor: 'rgba(255,255,255,0.1)',
       borderColor: 'rgb(252, 220, 0)',
