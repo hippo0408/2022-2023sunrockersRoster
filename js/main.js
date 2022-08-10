@@ -41,6 +41,27 @@ const options =  {
   },
 }
 
+var ctx = document.getElementById('mac');
+var mychart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels:data,
+    datasets: [{
+      label: 'mac',
+      data: [
+        93,59,90,75,99,92,69,75,86,91,84
+      ],
+      backgroundColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgb(252, 220, 0)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgb(255,255,255)',
+      hitRadius: 5
+    }, 
+      ]
+  },
+  options
+});
+
 var ctx = document.getElementById('nishino');
 var mychart = new Chart(ctx, {
   type: 'radar',
