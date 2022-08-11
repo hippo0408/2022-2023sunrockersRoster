@@ -41,6 +41,27 @@ const options =  {
   },
 }
 
+var ctx = document.getElementById('watanabe');
+var mychart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels:data,
+    datasets: [{
+      label: 'watanabe',
+      data: [
+        78,52,80,82,96,60,78,74,82,75,90
+      ],
+      backgroundColor: 'rgba(255,255,255,0.1)',
+      borderColor: 'rgb(252, 220, 0)',
+      borderWidth: 2,
+      pointBackgroundColor: 'rgb(255,255,255)',
+      hitRadius: 5
+    }, 
+      ]
+  },
+  options
+});
+
 var ctx = document.getElementById('mac');
 var mychart = new Chart(ctx, {
   type: 'radar',
